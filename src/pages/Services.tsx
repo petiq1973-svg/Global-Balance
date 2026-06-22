@@ -38,13 +38,11 @@ export function Services() {
                 <div className="grid md:grid-cols-2 gap-6">
                   {service.image && (
                     <div className="p-6 flex items-start">
-                      <div className="w-full aspect-[4/3] rounded-xl overflow-hidden bg-stone-100">
-                        <img
-                          src={service.image}
-                          alt={service.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
+                      <img
+                        src={service.image}
+                        alt={service.name}
+                        className="w-full rounded-xl object-contain"
+                      />
                     </div>
                   )}
                   <CardContent className={`py-6 ${service.image ? 'pr-6' : 'px-6 md:col-span-2'}`}>
