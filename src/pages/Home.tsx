@@ -22,47 +22,47 @@ export function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[#090e1a] min-h-[88vh] flex items-center">
+      <section className="relative overflow-hidden bg-[#faf8f5] min-h-[88vh] flex items-center">
         {/* Dot grid texture */}
         <div
-          className="absolute inset-0 opacity-[0.06]"
-          style={{ backgroundImage: 'radial-gradient(circle, #a78bfa 1px, transparent 1px)', backgroundSize: '32px 32px' }}
+          className="absolute inset-0 opacity-[0.07]"
+          style={{ backgroundImage: 'radial-gradient(circle, #c4b5fd 1px, transparent 1px)', backgroundSize: '32px 32px' }}
         />
 
         {/* Ambient glow blobs */}
-        <div className="absolute top-[-10%] right-[5%] w-[500px] h-[500px] rounded-full bg-violet-700/20 blur-[120px] pointer-events-none" />
-        <div className="absolute bottom-[-15%] right-[20%] w-[400px] h-[400px] rounded-full bg-teal-600/15 blur-[100px] pointer-events-none" />
+        <div className="absolute top-[-10%] right-[5%] w-[500px] h-[500px] rounded-full bg-violet-200/30 blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-[-15%] right-[20%] w-[400px] h-[400px] rounded-full bg-teal-200/30 blur-[100px] pointer-events-none" />
 
         {/* Animated rings — positioned right-center */}
         <div className="absolute right-[4%] md:right-[8%] top-1/2 -translate-y-1/2 pointer-events-none select-none">
           <div className="relative w-[420px] h-[420px] md:w-[560px] md:h-[560px]">
             {/* Static outer ring */}
-            <div className="absolute inset-0 rounded-full border border-violet-500/15" />
+            <div className="absolute inset-0 rounded-full border border-violet-300/30" />
             {/* Expanding rings */}
-            <div className="absolute inset-0 rounded-full border border-violet-400/50 animate-ring" />
-            <div className="absolute inset-0 rounded-full border border-teal-400/40 animate-ring-2" />
-            <div className="absolute inset-0 rounded-full border border-violet-300/30 animate-ring-3" />
+            <div className="absolute inset-0 rounded-full border border-violet-300/40 animate-ring" />
+            <div className="absolute inset-0 rounded-full border border-teal-300/30 animate-ring-2" />
+            <div className="absolute inset-0 rounded-full border border-violet-200/30 animate-ring-3" />
             {/* Inner core glow */}
-            <div className="absolute inset-[20%] rounded-full bg-violet-600/10 blur-2xl" />
-            <div className="absolute inset-[32%] rounded-full bg-teal-500/20 blur-xl animate-pulse" style={{ animationDuration: '3s' }} />
+            <div className="absolute inset-[20%] rounded-full bg-violet-200/20 blur-2xl" />
+            <div className="absolute inset-[32%] rounded-full bg-teal-200/20 blur-xl animate-pulse" style={{ animationDuration: '3s' }} />
             {/* Center dot */}
-            <div className="absolute inset-[46%] rounded-full bg-violet-400/60 animate-float shadow-[0_0_30px_10px_rgba(139,92,246,0.4)]" />
+            <div className="absolute inset-[46%] rounded-full bg-violet-400/50 animate-float shadow-[0_0_30px_10px_rgba(139,92,246,0.25)]" />
           </div>
         </div>
 
         {/* Left gradient fade so text stays readable */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#090e1a] via-[#090e1a]/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#faf8f5] via-[#faf8f5]/80 to-transparent" />
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="max-w-xl">
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-medium tracking-widest uppercase bg-violet-500/15 text-violet-300 border border-violet-500/25 mb-6">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-medium tracking-widest uppercase bg-violet-100 text-violet-700 border border-violet-200/60 mb-6">
               Биорезонансен център
             </span>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-stone-800 leading-tight">
               Холистичен подход. Индивидуално отношение.
             </h1>
-            <p className="mt-6 text-lg text-slate-300 leading-relaxed">
+            <p className="mt-6 text-lg text-stone-500 leading-relaxed">
               Съчетаваме професионален опит, специализирани знания и съвременни технологии,
               за да подпомогнем постигането на по-добър баланс, хармония и цялостно благополучие.
             </p>
@@ -74,7 +74,7 @@ export function Home() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-white/25 text-white bg-white/5 hover:bg-white/10 hover:border-white/40"
+                  className="border-stone-300 text-stone-700 bg-white/60 hover:bg-white hover:border-stone-400"
                 >
                   Разгледай услугите
                 </Button>
