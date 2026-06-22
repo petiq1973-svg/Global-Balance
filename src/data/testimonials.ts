@@ -3,6 +3,7 @@ export interface Testimonial {
   text: string;
   author: string;
   rating: number;
+  image?: string;
 }
 
 export const testimonials: Testimonial[] = [
@@ -11,6 +12,7 @@ export const testimonials: Testimonial[] = [
     text: 'След години на хронична умора и безброй изследвания, аура диагностиката разкри проблема за по-малко от час. Протоколът на Петя промени живота ми — имам енергия, която не съм имала от десетилетия.',
     author: 'Клиент на Глобъл Баланс',
     rating: 5,
+    image: '/изтеглен_фаил.png',
   },
   {
     id: '2',
